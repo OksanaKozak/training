@@ -9,39 +9,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/main.min.css">
 </head>
 
 <body>
-    <header>
+    <header class="header section">
        <div class="header-nav"> 
-            <a href="./index.html" class="logo"><img src="./images/лого.png" alt="logo" width="40px" height="37px"></a>
-            <button type="button" class="header-menu"><img src="./images/eva_menu-fill.png" alt="menu" width="32px" height="32px"></button>
+            <a href="./index.html" class="logo link"><img src="./images/лого.png" alt="logo" width="40px" height="37px"></a>
+            <button type="button" class="header-nav__menu"><img src="./images/eva_menu-fill.png" alt="menu" width="32px" height="32px"></button>
         </div>
-        <h1>ice cream <br> made with <br> passion</h1>
-        <button type="button" class="header-button">Products</button>
-        <a href="" class="header-link">How it’s made?</a>
-        <img src="./images/mobile.png" alt="ice" class="header-ice">
+        <h1 class="header__title">ice cream <br> made with <br> passion</h1>
+        <button type="button" class="header__button">Products</button>
+        <a href="" class="header__link">How it’s made?</a>
+        <img src="./images/mobile.png" alt="ice" class="header__img">
     </header>
 
-    <products>
-        <p class="products-p">100% natural</p>
-        <h2>products</h2>
-        <ul class="products-list">
-            
-            <li class="products-list-item">
-                <div class="products-div">
-                    <h3>ice cream</h3>
-                    <p class="products-list-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
+    <products class="products section">
+        <p class="products__text">100% natural</p>
+        <h2 class="products__title">products</h2>
+        <ul class="products__list">
+            <li class="products__item">
+                <div class="products__div">
+                    <h3 class="products__list--title">ice cream</h3>
+                    <p class="products__list--text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
                     </p>
-                    <img src="./images/arrow 4.png" alt="arrow" class="arrow"></div>
-                
+                    <img src="./images/arrow 4.png" alt="arrow" class="products__arrow">
+                </div>
             </li>
 
+            <li class="products__item products__item-two">
+                <div class="products__div">
+                    <h3 class="products__list--title">ice coffee</h3>
+                    <p class="products__list--text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
+                    </p>
+                    <img src="./images/arrow 4.png" alt="arrow" class="products__arrow">
+                </div>
+            </li>
+
+            <li class="products__item products__item-three">
+                <div class="products__div">
+                    <h3 class="products__list--title">ice cream</h3>
+                    <p class="products__list--text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
+                    </p>
+                    <img src="./images/arrow 4.png" alt="arrow" class="products__arrow">
+                </div>
+            </li>
         </ul>
-    
     </products>
+
+    <about class="about section">
+        <p class="about__text">tradition and love</p>
+        <h2 class="about__title">how <br> it’s <br> made?</h2>
+        <p class="about__text--second">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
+        <p class="about__text--second">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. </p>
+    </about>
 
     <!-- модальное окно -->
     <div class="backdrop">
