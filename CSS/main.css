@@ -30,7 +30,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -352,13 +351,30 @@ img {
   margin-bottom: 22px;
 }
 
-.Advantages {
+.Customer {
   background-image: url(..//../images/backgroud_mobile.png);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Advantages__img {
+.Customer__img {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: -20px;
+  left: 20px;
+}
+
+.Customer__foto {
+  margin-top: 180px;
 }/*# sourceMappingURL=main.css.map */

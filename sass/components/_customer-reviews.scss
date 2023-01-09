@@ -1,0 +1,17 @@
+.Customer {
+    background-image: url(..//../images/backgroud_mobile.png);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Customer__img {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    
+}
+.Customer__foto {
+    margin-top: 180px;
+}
