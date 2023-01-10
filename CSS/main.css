@@ -351,7 +351,7 @@ img {
   margin-bottom: 22px;
 }
 
-.Customer {
+.customer {
   background-image: url(..//../images/backgroud_mobile.png);
   position: relative;
   display: -webkit-box;
@@ -369,12 +369,120 @@ img {
           align-items: center;
 }
 
-.Customer__img {
+.customer__img {
   position: absolute;
   top: -20px;
   left: 20px;
 }
 
-.Customer__foto {
+.customer__foto {
   margin-top: 180px;
+}
+
+.customer__text {
+  width: 280px;
+  height: 256px;
+  background-color: #84A178;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #FCFCFC;
+  padding-left: 39px;
+  padding-top: 35px;
+  padding-right: 39px;
+  margin-bottom: 32px;
+}
+
+.visualli-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 412px;
+}
+
+.contacts__items {
+  width: 280px;
+  height: 412px;
+  background-color: #FCFCFC;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__btn {
+  width: 80px;
+  height: 22px;
+  background: #F8D24E;
+  border-radius: 4px;
+  margin-left: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.contacts__address {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #D6936D;
+}
+
+.contacts__address--span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #131313;
+  margin-left: 32px;
+  margin-bottom: 24px;
+}
+
+.contacts__table {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  font-style: normal;
+  color: #ABABAB;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 24px;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__table--title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #131313;
 }/*# sourceMappingURL=main.css.map */
