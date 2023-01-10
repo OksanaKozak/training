@@ -395,6 +395,10 @@ img {
   margin-bottom: 32px;
 }
 
+.contacts {
+  background-color: #84A178;
+}
+
 .visualli-hidden {
   position: absolute;
   width: 1px;
@@ -445,12 +449,16 @@ img {
 }
 
 .contacts__address {
+  display: block;
+  width: 190px;
+  height: 70px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #D6936D;
+  margin-left: 32px;
 }
 
 .contacts__address--span {
@@ -460,8 +468,7 @@ img {
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #131313;
-  margin-left: 32px;
-  margin-bottom: 24px;
+  padding-bottom: 8px;
 }
 
 .contacts__table {
@@ -485,4 +492,23 @@ img {
   font-size: 12px;
   line-height: 1.83;
   color: #131313;
+}
+
+.contacts__cont {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  font-style: normal;
+  color: #131313;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.contacts__tel {
+  margin-bottom: 6px;
+  margin-left: 32px;
+}
+
+.contacts__mail {
+  margin-left: 32px;
 }/*# sourceMappingURL=main.css.map */
