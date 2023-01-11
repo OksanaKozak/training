@@ -23,6 +23,8 @@
 }
 .about__img {
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .about__text--second {
     @include font(400, 12px, 1.62, null);
@@ -36,14 +38,14 @@
     justify-content: center;
     width: 164px;
     height: 42px;
-    margin-top: 10px;
     background: $color-second;
     border-radius: 10px;
     border-style: none;
     @include font(600, 14px, 1.29, null);
     font-style: normal;
     color: #000000;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 22px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,7 +55,9 @@
 .about__icon {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 28px;
     margin-bottom: 16px;
+
 }
 .about__numbers {
     @include font(700, 36px, 1.22, 0.04em);
@@ -65,5 +69,9 @@
     @include font(700, 12px, 1.7, null);
     text-align: center;
     color: $color-text;
-    margin-bottom: 22px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.about__list {
+    margin-bottom: 65px;
 }

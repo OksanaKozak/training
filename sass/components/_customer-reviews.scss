@@ -1,19 +1,18 @@
 .customer {
-    background-image: url(..//../images/backgroud_mobile.png);
+    background-image: url(..//..//images/backgroud_mobile.png);
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .customer__img {
     position: absolute;
     top: -20px;
-    left: 20px;
-    
+    left: 50px;
+      
 }
 .customer__foto {
     margin-top: 180px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .customer__text {
     width: 280px;
@@ -27,4 +26,13 @@
     padding-top: 35px;
     padding-right: 39px;
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.customer__name {
+    font-style: normal;
+    @include font (500, 20px, 1.86, null);
+    text-align: center;
+    color: $color;
+    margin-bottom: 12px;
 }
