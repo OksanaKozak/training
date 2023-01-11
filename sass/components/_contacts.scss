@@ -1,11 +1,25 @@
 .contacts {
-   position: relative;
-   background-color: $background-color;
+    position: relative;
+    background-color: #84A178;
+    
 }
+// .contacts__bg {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 350px;
+//     background-image: url(..//..//images/backgroud_mobile.png);
+// }
+
 // .contacts__list {
 //     position: absolute;
-  
+//     top: 0;
+//     left: 50%;
+//     transform: translate(-50%);
+//     z-index: 4;
 // }
+
 .visualli-hidden {
     position: absolute;
     width: 1px;
@@ -26,6 +40,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
+    z-index: 2;
 }
 .contacts__btn {
     background: $color-second;
@@ -84,7 +99,7 @@
 }
 .contacts__mail {
     margin-left: 32px;
-}    
+}   
 .contacts__button1 {
     display: flex;
     align-items: center;
@@ -97,7 +112,7 @@
     @include font (600, 14px, 1.29, null);
     font-style: normal;
     color: $color;
-    margin-top: 935px;
+    margin-top: 35px;
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
