@@ -468,7 +468,7 @@ img {
 @media screen and (min-width: 768px) {
   .contacts__items {
     width: 224px;
-    height: 537px;
+    height: 530px;
   }
   .contacts__items:not(:last-child) {
     margin-right: 20px;
@@ -506,6 +506,12 @@ img {
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__btn {
+    margin-top: 40px;
   }
 }
 
@@ -526,6 +532,7 @@ img {
     font-size: 14px;
     line-height: 1.83;
     letter-spacing: 0.04em;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -544,7 +551,7 @@ img {
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #131313;
-  padding-bottom: 8px;
+  margin-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
   .contacts__address--span {
@@ -560,6 +567,7 @@ img {
     font-size: 16px;
     line-height: 1.83;
     letter-spacing: 0.04em;
+    margin-bottom: 8px;
   }
 }
 
@@ -591,6 +599,8 @@ img {
     font-size: 16px;
     line-height: 1.83;
     letter-spacing: 0.04em;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -632,6 +642,7 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -732,6 +743,13 @@ img {
   margin-right: auto;
   margin-bottom: 30px;
 }
+.contacts__button2:hover {
+  border: 2px solid #0A8817;
+}
+.contacts__button2:focus {
+  border: 2px solid #0A8817;
+  color: #FFFFFF;
+}
 @media screen and (min-width: 768px) {
   .contacts__button2 {
     margin-top: 40px;
@@ -742,6 +760,9 @@ img {
 
 .contacts__button--span {
   padding-left: 4px;
+}
+.contacts__button--span:focus {
+  color: #FFFFFF;
 }
 
 .backdrop {
@@ -774,6 +795,12 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+    padding: 32px 60px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -817,6 +844,14 @@ img {
   color: #131313;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-left: 63px;
+    margin-right: 63px;
+  }
+}
 
 .modal__text {
   font-family: "Montserrat";
@@ -827,10 +862,16 @@ img {
   color: #131313;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .modal__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
 
 .form-input-mod {
-  height: 32px;
   width: 224px;
+  height: 32px;
   padding-left: 12px;
   margin-bottom: 12px;
   font-family: "Montserrat";
@@ -843,10 +884,19 @@ img {
   border: 1px solid #84A178;
   border-radius: 10px;
 }
+@media screen and (min-width: 768px) {
+  .form-input-mod {
+    width: 368px;
+    height: 42px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    font-size: 14px;
+  }
+}
 
 textarea {
   resize: none;
-  padding: 8px 12px;
   width: 224px;
   height: 64px;
   font-family: "Montserrat";
@@ -855,54 +905,19 @@ textarea {
   font-size: 12px;
   line-height: 1.4;
   color: #131313;
+  padding: 8px 12px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84A178;
   border-radius: 10px;
 }
-
-.form-field-mod textarea::-webkit-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-.form-field-mod textarea::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-.form-field-mod textarea:-ms-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-.form-field-mod textarea::-ms-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-}
-
-.form-field-mod textarea::placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
+@media screen and (min-width: 768px) {
+  textarea {
+    width: 368px;
+    height: 84px;
+    font-size: 14px;
+    padding: 11px 16px;
+    margin-left: 40px;
+  }
 }
 
 .modal-button {
@@ -919,13 +934,15 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   color: #131313;
   padding: 12px 34px;
   margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .modal-button {
+    width: 121px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -60,7 +60,7 @@
 
     @media screen and (min-width:768px) {
         width: 224px;
-        height: 537px;
+        height: 530px;
         
         &:not(:last-child) {
             margin-right: 20px;
@@ -90,6 +90,10 @@
 
     @media screen and (min-width:768px) {
         @include font (500, 16px, 1.4, 0.04em);
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 40px;
     }
   
 }
@@ -103,6 +107,7 @@
 
     @media screen and (min-width:768px) {
         @include font (500, 14px, 1.83, 0.04em);
+        margin-bottom: 32px;
     }
     @media screen and (min-width:1200px) {
         @include font (500, 16px, 1.83, 0.04em);
@@ -112,13 +117,15 @@
     font-style: normal;
     @include font (500, 12px, 1.83, 0.04em);
     color: $color;
-    padding-bottom: 8px;
+    margin-bottom: 12px;
 
     @media screen and (min-width:768px) {
         @include font (500, 14px, 1.83, 0.04em);
+        
     }
     @media screen and (min-width:1200px) {
         @include font (500, 16px, 1.83, 0.04em);
+        margin-bottom: 8px;
     }
 }
 .contacts__table {
@@ -138,6 +145,8 @@
     }
     @media screen and (min-width:1200px) {
         @include font (500, 16px, 1.83, 0.04em);
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 .contacts__table--title {
@@ -161,6 +170,7 @@
 
     @media screen and (min-width:768px) {
         @include font (500, 14px, 1.5, null);
+        margin-top: 40px;
     }
     @media screen and (min-width:1200px) {
         @include font (500, 16px, 1.5, null);
@@ -223,6 +233,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    &:hover {
+        border: 2px solid #0A8817;
+    }
+    &:focus {
+        border: 2px solid #0A8817;
+        color: #FFFFFF;
+    }
 
     @media screen and (min-width:768px) {
         margin-top: 40px;
@@ -232,6 +249,9 @@
 }
 .contacts__button--span {
     padding-left: 4px;
+    &:focus {
+        color: #FFFFFF;
+    }
 }
 
 
@@ -261,6 +281,11 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:768px) {
+        width: 568px;
+        padding: 32px 60px;
+    }
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scaleY(0);
@@ -294,6 +319,13 @@
     text-align: center;
     color: #131313;
     margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-left: 63px;
+        margin-right: 63px;
+    }
 }
 .modal__text {
     font-family: 'Montserrat';
@@ -303,11 +335,22 @@
     line-height: 1.4;
     color: #131313;
     margin-bottom: 24px;
-}
 
+    @media screen and (min-width:768px) {
+        font-size: 16px;
+        line-height: 1.4;
+          
+    }
+}
+// .form-mod {
+//     display: flex;
+//     flex-direction: row;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 .form-input-mod {
-    height: 32px;
     width: 224px;
+    height: 32px;
     padding-left: 12px;
     margin-bottom: 12px;
     font-family: 'Montserrat';
@@ -319,6 +362,15 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+
+    @media screen and (min-width:768px) {
+        width: 368px;
+        height: 42px;
+        padding-left: 16px;
+        margin-bottom: 16px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
     // transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 //       &:focus,
 //       &:hover {
@@ -329,7 +381,6 @@
 
 textarea {
     resize: none;
-    padding: 8px 12px;
     width: 224px;
     height: 64px;
     font-family: 'Montserrat';
@@ -338,23 +389,24 @@ textarea {
     font-size: 12px;
     line-height: 1.4;
     color: #131313;
+    padding: 8px 12px;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+
+    @media screen and (min-width:768px) {
+        width: 368px;
+        height: 84px;
+        font-size: 14px;
+        padding: 11px 16px;
+        margin-left: 40px;
+    }
 //     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 //       &:focus,
 //       &:hover {
 //     border-color: var(--brand-color);
 //     outline: transparent;
 //   }
-  }
-.form-field-mod textarea::placeholder {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #131313;
   }
 
 .modal-button {
@@ -369,11 +421,14 @@ textarea {
     font-size: 12px;
     line-height: 1.25;
     display: flex;
-    align-items: center;
-    text-align: center;
     color: #131313;
     padding: 12px 34px;
     margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width:768px) {
+        width: 121px;
+        font-size: 14px;
+    }
   }
