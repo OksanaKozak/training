@@ -765,6 +765,99 @@ img {
   color: #FFFFFF;
 }
 
+.map {
+  position: relative;
+  width: 280px;
+  height: 365px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .map {
+    width: 568px;
+    height: 458px;
+  }
+}
+
+.map__btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-style: none;
+  background-color: #FCFCFC;
+}
+
+.map__title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-top: 28px;
+  margin-left: 57px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .map__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 32px;
+    margin-left: 183px;
+    margin-bottom: 32px;
+  }
+}
+
+.map__iframe {
+  width: 224px;
+  height: 199px;
+  margin-bottom: 24px;
+  margin-left: 28px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .map__iframe {
+    width: 448px;
+    height: 260px;
+    margin-left: 60px;
+  }
+}
+
+.map__button {
+  width: 134px;
+  height: 42px;
+  background: #F8D24E;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .map__button {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
